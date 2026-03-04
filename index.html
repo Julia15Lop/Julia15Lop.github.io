@@ -1,97 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Julia López Sánchez - Platform Engineer & SRE & Educadora Tech. Portfolio de proyectos y servicios." />
   <title>Julia López Sánchez | SRE & Educadora Tech</title>
-  <style>
-    body {
-      font-family: 'Fira Code', monospace;
-      background-color: #F9F5F6;
-      color: #2B1D2C;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #8C4351;
-      color: white;
-      padding: 1.5rem;
-      border-radius: 16px;
-    }
-    h1, h2 {
-      color: #8C4351;
-    }
-    section {
-      margin: 2rem 0;
-    }
-    a {
-      color: #A64253;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .tag {
-      background: #C3819C;
-      padding: 0.3rem 0.6rem;
-      border-radius: 8px;
-      margin-right: 0.5rem;
-      color: white;
-      font-size: 0.85rem;
-    }
-  </style>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Julia López Sánchez</h1>
-    <p>SRE | DevOps | Educadora | Sostenibilidad Tech</p>
-  </header>
 
-  <section>
-    <h2>👩‍💻 Sobre Mí</h2>
-    <p>Soy freelance SRE/DevOps con experiencia en automatización, despliegue en la nube y monitorización avanzada. Actualmente curso el CAP para combinar la docencia con la tecnología.</p>
-    <p>Me apasiona crear infraestructuras resilientes y sostenibles, y transmitir estos conocimientos en entornos educativos y colaborativos.</p>
+  <section class="hero">
+    <div class="container">
+      <div class="logo-container">
+        <img src="juli_logo.png" alt="Julia López Sánchez" class="logo-img">
+      </div>
+      <h1>Julia López Sánchez</h1>
+      <p class="tagline">Platform Engineer & SRE | MLOps | Educadora Tech | Sostenibilidad Tech</p>
+
+      <div class="hero-tags">
+        <span class="badge">AWS/GCP</span>
+        <span class="badge">Kubernetes</span>
+        <span class="badge">Terraform</span>
+        <span class="badge">Green IT</span>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>🛠️ Servicios</h2>
-    <ul>
-      <li>Diseño de arquitecturas Cloud (AWS, GCP, Kubernetes)</li>
-      <li>Automatización CI/CD (GitHub Actions, GitLab CI)</li>
-      <li>Observabilidad (Prometheus, Grafana)</li>
-      <li>Mentoría y formación DevOps</li>
-    </ul>
-  </section>
+  <div class="container">
 
-  <section>
-    <h2>💻 Proyectos Técnicos</h2>
-    <p><strong>DevOps Starter Kit:</strong> Infraestructura escalable para MVPs cloud-native.</p>
-    <p><strong>Green Monitoring Stack:</strong> Stack de observabilidad enfocado en eficiencia de recursos.</p>
-    <p><strong>Helm + Kubernetes:</strong> Plantillas para facilitar el onboarding de microservicios.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+      <h2>👩‍💻 Sobre Mí</h2>
+      <div class="content-block">
+        <p>Soy <strong>freelance SRE/DevOps</strong> con profunda experiencia en automatización, despliegue en la nube y
+          monitorización avanzada. Mi misión es crear infraestructuras que no solo sean resilientes y escalables, sino
+          también <strong>sostenibles</strong>.</p>
+        <p>Actualmente, combino mi pasión técnica con la docencia (Máster CAP), formando a la próxima generación de
+          profesionales tecnológicos con metodologías activas y un enfoque humano.</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>📚 Artículos y Recursos</h2>
-    <p><a href="https://medium.com/@julia15lopezs" target="_blank">Mi perfil en Medium</a></p>
-    <p>Dashboards Prometheus + Grafana | Diagramas técnicos en Canva</p>
-  </section>
+    <!-- Services Section -->
+    <section id="services">
+      <h2>🛠️ Servicios</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>☁️ Arquitectura Cloud</h3>
+          <p>Diseño e implementación de infraestructuras seguras y escalables en AWS y GCP. Migraciones y optimización
+            de costes.</p>
+          <div class="tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">AWS</span>
+            <span class="tag">GCP</span>
+          </div>
+        </div>
 
-  <section>
-    <h2>🎓 Formación y CAP</h2>
-    <p>Finalizado Máster CAP para unir mi vocación docente con la tecnología. Aplico metodologías activas para formar a futuros profesionales en tecnología.</p>
-  </section>
+        <div class="card">
+          <h3>⚙️ Automatización (CI/CD)</h3>
+          <p>Pipelines eficientes para acelerar el "time-to-market". De código a producción en minutos, con tests
+            automáticos.</p>
+          <div class="tags">
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">GitLab CI</span>
+            <span class="tag">ArgoCD</span>
+          </div>
+        </div>
 
-  <section>
-    <h2>🌱 Sostenibilidad - Soy una apasionada de la naturaleza</h2>
-    <p>Trabajo en proyectos de energía limpia desde mi entorno rural, integrando tecnología con los recursos naturales locales.</p>
-  </section>
+        <div class="card">
+          <h3>📊 Observabilidad</h3>
+          <p>Monitorización proactiva para detectar problemas antes que los usuarios. Dashboards claros y alertas
+            accionables.</p>
+          <div class="tags">
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">ELK</span>
+          </div>
+        </div>
 
-  <section>
-    <h2>📧 Contacto</h2>
-    <p>Email: julia15lopezs@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/julia15lopez">@Julia15Lop</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/julia15lopezs">linkedin.com/in/julia15lopezs</a></p>
-  </section>
+        <div class="card">
+          <h3>🎓 Mentoría DevOps</h3>
+          <p>Formación personalizada para equipos y particulares. Desde los fundamentos de Docker más allá de
+            Kubernetes.</p>
+          <div class="tags">
+            <span class="tag">Training</span>
+            <span class="tag">Coaching</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>💻 Proyectos Técnicos</h2>
+      <div class="grid">
+
+        <div class="card project-card">
+          <h3>🚀 DevOps Starter Kit</h3>
+          <p>Infraestructura escalable "battery-included" para MVPs cloud-native. Incluye VPC, EKS y pipelines básicos.
+          </p>
+          <div class="tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <h3>🌿 Green Monitoring Stack</h3>
+          <p>Stack de observabilidad enfocado en medir la eficiencia energética de los recursos y reducir la huella de
+            carbono.</p>
+          <div class="tags">
+            <span class="tag">Prometheus</span>
+            <span class="tag">GreenOps</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <h3>⚓ Helm + Kubernetes</h3>
+          <p>Colección de Charts de Helm optimizados y plantillas para facilitar el onboarding de microservicios
+            complejos.</p>
+          <div class="tags">
+            <span class="tag">K8s</span>
+            <span class="tag">Helm</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="education">
+      <h2>🎓 Formación y CAP</h2>
+      <p>Finalizado Máster CAP para unir mi vocación docente con la tecnología. Aplico metodologías activas para formar
+        a futuros profesionales en tecnología, integrando valores de sostenibilidad y ética profesional.</p>
+    </section>
+
+    <section id="sustainability">
+      <h2>🌱 Sostenibilidad</h2>
+      <p>Soy una apasionada de la naturaleza. Trabajo en proyectos de energía limpia desde mi entorno rural, demostrando
+        que la alta tecnología puede convivir y potenciar los recursos naturales locales.</p>
+    </section>
+
+  </div> <!-- End Container -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h2>📧 Contacto</h2>
+      <p>¿Hablamos de tu próximo proyecto?</p>
+      <p>
+        <a href="mailto:julia15lopezs@gmail.com">julia15lopezs@gmail.com</a>
+      </p>
+
+      <div style="margin-top: 2rem;">
+        <a href="https://github.com/Julia15Lop" target="_blank">GitHub</a>
+        <a href="https:linkedin.com/in/julia-lópez-sánchez-25032b138" target="_blank">LinkedIn</a>
+        <a href="https://medium.com/@julia15lopezs" target="_blank">Medium</a>
+      </div>
+
+      <p style="margin-top: 3rem; font-size: 0.8rem; opacity: 0.6;">
+        © 2026 Julia López Sánchez. Built with ❤️ & Code.
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
