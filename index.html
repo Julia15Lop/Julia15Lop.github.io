@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Julia López Sánchez - Platform Engineer & SRE & Educadora Tech. Portfolio de proyectos y servicios." />
-  <title>Julia López Sánchez | SRE & Educadora Tech</title>
+    content="Julia López Sánchez – DevOps / Site Reliability Engineer especializada en Kubernetes, Terraform, CI/CD e infraestructura cloud." />
+  <title>Julia López Sánchez | DevOps & SRE Engineer</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,164 +21,557 @@
 
 <body>
 
+  <!-- ── Language Toggle ── -->
+  <div class="lang-toggle" id="langToggle" onclick="toggleLang()" title="Switch language / Cambiar idioma">
+    <span id="langLabel">EN</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
   <section class="hero">
     <div class="container">
       <div class="logo-container">
         <img src="juli_logo.png" alt="Julia López Sánchez" class="logo-img">
       </div>
       <h1>Julia López Sánchez</h1>
-      <p class="tagline">Platform Engineer & SRE | Educadora Tech | GreenOps & Cloud Efficiency</p>
+      <p class="tagline" data-es="Platform Engineer & SRE | Infraestructura Cloud | IaC | Observabilidad"
+        data-en="Platform Engineer & SRE | Cloud Infrastructure | IaC | Observability">
+        Platform Engineer &amp; SRE | Infraestructura Cloud | IaC | Observabilidad
+      </p>
 
       <div class="hero-tags">
-        <span class="badge">AWS/GCP</span>
         <span class="badge">Kubernetes</span>
         <span class="badge">Terraform</span>
-        <span class="badge">Green IT</span>
+        <span class="badge">AWS / Azure / GCP</span>
+        <span class="badge">Jenkins CI/CD</span>
+        <span class="badge">Prometheus · Grafana</span>
       </div>
     </div>
   </section>
 
   <div class="container">
 
-    <!-- About Section -->
+    <!-- ══════════════════════════════════════════
+         SOBRE MÍ / ABOUT ME
+    ══════════════════════════════════════════ -->
     <section id="about">
-      <h2>👩‍💻 Sobre Mí - Soft Skills </h2>
+      <h2 data-es="👩‍💻 Sobre Mí" data-en="👩‍💻 About Me">👩‍💻 Sobre Mí</h2>
       <div class="content-block">
-        <p>Soy <strong>freelance SRE/DevOps</strong> con profunda experiencia en automatización, despliegue en la nube y
-          monitorización avanzada. Mi misión es crear infraestructuras que no solo sean resilientes y escalables, sino
-          también <strong>sostenibles</strong>.</p>
-        <p>Actualmente, combino mi pasión técnica con la docencia (Máster CAP), formando a la próxima generación de
-          profesionales tecnológicos con metodologías activas y un enfoque humano.</p>
+        <p data-es="Soy <strong>Ingeniería DevOps / SRE</strong> con amplia experiencia en el diseño y operación de infraestructura cloud-native a escala. Me especializo en <strong>Infrastructure as Code</strong>, orquestación de contenedores con <strong>Kubernetes</strong> y automatización end-to-end de <strong>CI/CD</strong>, convirtiendo pipelines de entrega complejos en procesos fiables y repetibles."
+          data-en="I am a <strong>DevOps / Site Reliability Engineer</strong> with hands-on experience designing and operating cloud-native infrastructure at scale. I specialise in <strong>Infrastructure as Code</strong>, container orchestration with <strong>Kubernetes</strong>, and end-to-end <strong>CI/CD automation</strong> — turning complex delivery pipelines into reliable, repeatable processes.">
+          Soy <strong>Ingeniería DevOps / SRE</strong> con amplia experiencia en el diseño y operación de
+          infraestructura cloud-native a escala. Me especializo en <strong>Infrastructure as Code</strong>, orquestación
+          de contenedores con <strong>Kubernetes</strong> y automatización end-to-end de <strong>CI/CD</strong>,
+          convirtiendo pipelines de entrega complejos en procesos fiables y repetibles.
+        </p>
+        <p data-es="Mi foco es construir sistemas <strong>resilientes, observables y eficientes en coste</strong> sobre entornos multi-cloud (AWS, Azure, GCP). Combino rigor técnico con un compromiso firme hacia una <strong>infraestructura sostenible</strong>, reduciendo el desperdicio de recursos cloud junto con la carga operativa."
+          data-en="My focus is on building systems that are <strong>resilient, observable, and cost-efficient</strong> across multi-cloud environments (AWS, Azure, GCP). I combine engineering rigour with a commitment to <strong>sustainable infrastructure</strong>, reducing cloud waste alongside operational overhead.">
+          Mi foco es construir sistemas <strong>resilientes, observables y eficientes en coste</strong> sobre entornos
+          multi-cloud (AWS, Azure, GCP). Combino rigor técnico con un compromiso firme hacia una <strong>infraestructura
+            sostenible</strong>, reduciendo el desperdicio de recursos cloud junto con la carga operativa.
+        </p>
+        <p data-es="Más allá de la ingeniería, me apasiona traducir conceptos técnicos complejos en conocimiento accesible. He completado un <strong>Máster en Formación del Profesorado (CAP)</strong> para formalizar mi vocación por la mentoría y la educación tecnológica."
+          data-en="Beyond engineering, I translate complex technical concepts into accessible knowledge — having completed a <strong>Master's in Teaching (CAP)</strong> to formalise my passion for mentoring and developer education.">
+          Más allá de la ingeniería, me apasiona traducir conceptos técnicos complejos en conocimiento accesible. He
+          completado un <strong>Máster en Formación del Profesorado (CAP)</strong> para formalizar mi vocación por la
+          mentoría y la educación tecnológica.
+        </p>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-      <h2>🛠️ Servicios</h2>
+    <!-- ══════════════════════════════════════════
+         EXPERIENCIA / EXPERIENCE
+    ══════════════════════════════════════════ -->
+    <section id="experience">
+      <h2 data-es="💼 Experiencia" data-en="💼 Experience">💼 Experiencia</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="timeline-date">2023 – Presente / Present</span>
+          <div class="timeline-content">
+            <h3 data-es="Ingeniería DevOps / SRE Freelance" data-en="Freelance DevOps / SRE Engineer">
+              Ingeniería DevOps / SRE Freelance
+            </h3>
+            <p class="timeline-company" data-es="Autónoma · Remoto" data-en="Self-employed · Remote">
+              Autónoma · Remoto
+            </p>
+            <ul>
+              <li
+                data-es="Diseño y provisión de infraestructura multi-cloud (AWS, GCP) con módulos de <strong>Terraform</strong>, aplicando GitOps y política-como-código."
+                data-en="Designed and provisioned multi-cloud infrastructure (AWS, GCP) using <strong>Terraform</strong> modules, enforcing GitOps workflows and policy-as-code.">
+                Diseño y provisión de infraestructura multi-cloud (AWS, GCP) con módulos de <strong>Terraform</strong>,
+                aplicando GitOps y política-como-código.
+              </li>
+              <li
+                data-es="Construcción y mantenimiento de clústeres <strong>Kubernetes</strong> (EKS, GKE) para microservicios, incluyendo RBAC, políticas de red y gestión de Helm Charts."
+                data-en="Built and maintained <strong>Kubernetes</strong> clusters (EKS, GKE) for containerised microservices, including RBAC, network policies, and Helm chart management.">
+                Construcción y mantenimiento de clústeres <strong>Kubernetes</strong> (EKS, GKE) para microservicios,
+                incluyendo RBAC, políticas de red y gestión de Helm Charts.
+              </li>
+              <li
+                data-es="Implementación de pipelines CI/CD con <strong>Jenkins</strong>: testing automatizado, builds Docker, escaneo de seguridad y despliegues blue-green."
+                data-en="Implemented <strong>Jenkins</strong> CI/CD pipelines integrating automated testing, Docker image builds, security scanning, and blue-green deployments.">
+                Implementación de pipelines CI/CD con <strong>Jenkins</strong>: testing automatizado, builds Docker,
+                escaneo de seguridad y despliegues blue-green.
+              </li>
+              <li
+                data-es="Despliegue de stacks de observabilidad — <strong>Prometheus, Grafana, ELK</strong> — reduciendo el MTTR al mejorar la cobertura de alertas y la claridad de dashboards."
+                data-en="Deployed full observability stacks — <strong>Prometheus, Grafana, ELK</strong> — reducing MTTR by improving alert coverage and dashboard clarity.">
+                Despliegue de stacks de observabilidad — <strong>Prometheus, Grafana, ELK</strong> — reduciendo el MTTR
+                al mejorar la cobertura de alertas y la claridad de dashboards.
+              </li>
+              <li data-es="Coaching DevOps y auditorías de infraestructura para equipos de ingeniería en crecimiento."
+                data-en="Provided DevOps coaching and infrastructure audits for scale-up engineering teams.">
+                Coaching DevOps y auditorías de infraestructura para equipos de ingeniería en crecimiento.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2021 – 2023</span>
+          <div class="timeline-content">
+            <h3 data-es="Ingeniería de Plataforma / DevOps" data-en="Platform / DevOps Engineer">
+              Ingeniería de Plataforma / DevOps
+            </h3>
+            <p class="timeline-company" data-es="Empresa tecnológica · Madrid, España"
+              data-en="Tech Company · Madrid, Spain">
+              Empresa tecnológica · Madrid, España
+            </p>
+            <ul>
+              <li
+                data-es="Migración de cargas de trabajo on-premise a <strong>AWS</strong> con Terraform, reduciendo el tiempo de aprovisionamiento de infraestructura en ~70%."
+                data-en="Migrated legacy on-premise workloads to <strong>AWS</strong> using Terraform, cutting infrastructure provisioning time by ~70%.">
+                Migración de cargas de trabajo on-premise a <strong>AWS</strong> con Terraform, reduciendo el tiempo de
+                aprovisionamiento de infraestructura en ~70%.
+              </li>
+              <li
+                data-es="Contenedorización de aplicaciones con <strong>Docker</strong> y orquestación en <strong>Kubernetes</strong>, mejorando la frecuencia y fiabilidad de los despliegues."
+                data-en="Containerised applications with <strong>Docker</strong> and orchestrated them on <strong>Kubernetes</strong>, improving deployment frequency and reliability.">
+                Contenedorización de aplicaciones con <strong>Docker</strong> y orquestación en
+                <strong>Kubernetes</strong>, mejorando la frecuencia y fiabilidad de los despliegues.
+              </li>
+              <li
+                data-es="Estandarización de CI/CD entre múltiples equipos con librerías compartidas de <strong>Jenkins</strong>, permitiendo pipelines consistentes y auditables."
+                data-en="Standardised CI/CD across multiple teams with <strong>Jenkins</strong> shared libraries, enabling consistent, auditable pipelines.">
+                Estandarización de CI/CD entre múltiples equipos con librerías compartidas de <strong>Jenkins</strong>,
+                permitiendo pipelines consistentes y auditables.
+              </li>
+              <li
+                data-es="Configuración de reglas de alertas en <strong>Prometheus</strong> y dashboards en <strong>Grafana</strong> para el seguimiento de SLI/SLOs en tiempo real."
+                data-en="Configured <strong>Prometheus</strong> alerting rules and <strong>Grafana</strong> dashboards for real-time SLI/SLO tracking.">
+                Configuración de reglas de alertas en <strong>Prometheus</strong> y dashboards en
+                <strong>Grafana</strong> para el seguimiento de SLI/SLOs en tiempo real.
+              </li>
+              <li
+                data-es="Gestión de respuesta a incidentes, dirección de post-mortems e impulso de iniciativas de automatización preventiva."
+                data-en="Led incident response processes, conducted post-mortems, and drove preventive automation initiatives.">
+                Gestión de respuesta a incidentes, dirección de post-mortems e impulso de iniciativas de automatización
+                preventiva.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2019 – 2021</span>
+          <div class="timeline-content">
+            <h3 data-es="Ingeniería de Sistemas / Infraestructura Cloud"
+              data-en="Systems / Cloud Infrastructure Engineer">
+              Ingeniería de Sistemas / Infraestructura Cloud
+            </h3>
+            <p class="timeline-company" data-es="Empresa de Servicios IT · España" data-en="IT Services Firm · Spain">
+              Empresa de Servicios IT · España
+            </p>
+            <ul>
+              <li
+                data-es="Gestión de flotas de servidores Linux y recursos cloud en entornos <strong>AWS EC2, RDS, S3</strong> y <strong>Azure</strong>."
+                data-en="Managed Linux server fleets and cloud resources across <strong>AWS EC2, RDS, S3</strong> and <strong>Azure</strong> environments.">
+                Gestión de flotas de servidores Linux y recursos cloud en entornos <strong>AWS EC2, RDS, S3</strong> y
+                <strong>Azure</strong>.
+              </li>
+              <li
+                data-es="Automatización del aprovisionamiento y gestión de configuración con <strong>Terraform</strong> y <strong>Ansible</strong>."
+                data-en="Automated provisioning and configuration management with <strong>Terraform</strong> and <strong>Ansible</strong>.">
+                Automatización del aprovisionamiento y gestión de configuración con <strong>Terraform</strong> y
+                <strong>Ansible</strong>.
+              </li>
+              <li
+                data-es="Soporte en la migración a cargas de trabajo en contenedores con Docker; introducción de Kubernetes en entornos de staging."
+                data-en="Supported migration to containerised workloads using Docker; introduced Kubernetes for staging environments.">
+                Soporte en la migración a cargas de trabajo en contenedores con Docker; introducción de Kubernetes en
+                entornos de staging.
+              </li>
+              <li
+                data-es="Implementación de logging centralizado con el <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana)."
+                data-en="Implemented centralised logging with the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana).">
+                Implementación de logging centralizado con el <strong>ELK Stack</strong> (Elasticsearch, Logstash,
+                Kibana).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROYECTOS / PROJECTS
+    ══════════════════════════════════════════ -->
+    <section id="projects">
+      <h2 data-es="🚀 Proyectos y Logros DevOps Clave" data-en="🚀 Key DevOps Projects &amp; Achievements">
+        🚀 Proyectos y Logros DevOps Clave
+      </h2>
       <div class="grid">
-        <div class="card">
-          <h3>☁️ Arquitectura Cloud</h3>
-          <p>Diseño e implementación de infraestructuras seguras y escalables en AWS y GCP. Migraciones y optimización
-            de costes.</p>
+
+        <div class="card project-card">
+          <h3 data-es="☁️ Starter Kit Cloud-Native" data-en="☁️ Cloud-Native Starter Kit">
+            ☁️ Starter Kit Cloud-Native
+          </h3>
+          <p data-es="Módulos Terraform listos para producción en AWS: VPC, clúster EKS, roles IAM, Route 53 y certificados ACM. Permite el aprovisionamiento de entornos desde cero en menos de 10 minutos."
+            data-en="Production-ready Terraform modules for AWS: VPC, EKS cluster, IAM roles, Route 53, and ACM certificates. Enables zero-touch environment provisioning in under 10 minutes.">
+            Módulos Terraform listos para producción en AWS: VPC, clúster EKS, roles IAM, Route 53 y certificados ACM.
+            Permite el aprovisionamiento de entornos desde cero en menos de 10 minutos.
+          </p>
           <div class="tags">
             <span class="tag">Terraform</span>
-            <span class="tag">AWS</span>
-            <span class="tag">GCP</span>
+            <span class="tag">AWS EKS</span>
+            <span class="tag">IaC</span>
           </div>
         </div>
 
-        <div class="card">
-          <h3>⚙️ Automatización (CI/CD)</h3>
-          <p>Pipelines eficientes para acelerar el "time-to-market". De código a producción en minutos, con tests
-            automáticos.</p>
+        <div class="card project-card">
+          <h3 data-es="⚙️ Librería Compartida Jenkins CI/CD" data-en="⚙️ Jenkins CI/CD Shared Library">
+            ⚙️ Librería Compartida Jenkins CI/CD
+          </h3>
+          <p data-es="Librería compartida de Jenkins adoptada por más de 5 equipos. Proporciona stages reutilizables para build, análisis SAST, publicación Docker y despliegues rolling en Kubernetes — reduciendo el tiempo de configuración de pipelines de días a horas."
+            data-en="Centralised Jenkins shared library adopted across 5+ teams. Provides reusable stages for build, SAST scanning, Docker publishing, and Kubernetes rolling deployments — cutting pipeline setup from days to hours.">
+            Librería compartida de Jenkins adoptada por más de 5 equipos. Proporciona stages reutilizables para build,
+            análisis SAST, publicación Docker y despliegues rolling en Kubernetes — reduciendo el tiempo de
+            configuración de pipelines de días a horas.
+          </p>
           <div class="tags">
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">GitLab CI</span>
-            <span class="tag">ArgoCD</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Groovy</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
           </div>
         </div>
 
-        <div class="card">
-          <h3>📊 Observabilidad</h3>
-          <p>Monitorización proactiva para detectar problemas antes que los usuarios. Dashboards claros y alertas
-            accionables.</p>
+        <div class="card project-card">
+          <h3 data-es="📊 Plataforma de Observabilidad Full-Stack" data-en="📊 Full-Stack Observability Platform">
+            📊 Plataforma de Observabilidad Full-Stack
+          </h3>
+          <p data-es="Stack de monitorización completo: Prometheus para métricas, Loki para logs, dashboards Grafana y alertas en PagerDuty. Reducción del ruido de alertas en un 40% y del MTTD en un 30%."
+            data-en="End-to-end monitoring stack: Prometheus for metrics, Loki for logs, Grafana dashboards, and PagerDuty alerting. Reduced alert noise by 40% and mean time to detection (MTTD) by 30%.">
+            Stack de monitorización completo: Prometheus para métricas, Loki para logs, dashboards Grafana y alertas en
+            PagerDuty. Reducción del ruido de alertas en un 40% y del MTTD en un 30%.
+          </p>
           <div class="tags">
             <span class="tag">Prometheus</span>
             <span class="tag">Grafana</span>
             <span class="tag">ELK</span>
+            <span class="tag">Loki</span>
           </div>
         </div>
-
-        <div class="card">
-          <h3>🎓 Mentoría DevOps</h3>
-          <p>Formación personalizada para equipos y particulares. Desde los fundamentos de Docker más allá de
-            Kubernetes.</p>
-          <div class="tags">
-            <span class="tag">Training</span>
-            <span class="tag">Coaching</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>💻 Proyectos Técnicos</h2>
-      <div class="grid">
 
         <div class="card project-card">
-          <h3>🚀 DevOps Starter Kit</h3>
-          <p>Infraestructura escalable "battery-included" para MVPs cloud-native. Incluye VPC, EKS y pipelines básicos.
+          <h3 data-es="⚓ Librería de Helm Charts para Kubernetes" data-en="⚓ Kubernetes Helm Chart Library">
+            ⚓ Librería de Helm Charts para Kubernetes
+          </h3>
+          <p data-es="Charts Helm estandarizados para el onboarding de microservicios: HPA configurable, PodDisruptionBudgets, NetworkPolicies y manifiestos RBAC. Reducción del time-to-deploy para nuevos servicios en un 60%."
+            data-en="Standardised Helm charts for microservice onboarding: configurable HPA, PodDisruptionBudgets, NetworkPolicies, and RBAC manifests. Reduced time-to-deploy for new services by 60%.">
+            Charts Helm estandarizados para el onboarding de microservicios: HPA configurable, PodDisruptionBudgets,
+            NetworkPolicies y manifiestos RBAC. Reducción del time-to-deploy para nuevos servicios en un 60%.
+          </p>
+          <div class="tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Helm</span>
+            <span class="tag">GitOps</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <h3 data-es="🌿 Dashboard GreenOps" data-en="🌿 GreenOps Monitoring Dashboard">
+            🌿 Dashboard GreenOps
+          </h3>
+          <p data-es="Dashboards Grafana correlacionados con datos de coste cloud para identificar cargas sobredimensionadas. Reducción del 15-20% en el gasto mensual cloud mediante recomendaciones de right-sizing."
+            data-en="Custom Grafana dashboards correlated with cloud cost data to identify over-provisioned workloads. Achieved 15–20% reduction in monthly cloud spend through right-sizing recommendations.">
+            Dashboards Grafana correlacionados con datos de coste cloud para identificar cargas sobredimensionadas.
+            Reducción del 15-20% en el gasto mensual cloud mediante recomendaciones de right-sizing.
+          </p>
+          <div class="tags">
+            <span class="tag">Grafana</span>
+            <span class="tag">FinOps</span>
+            <span class="tag">GreenOps</span>
+            <span class="tag">AWS Cost Explorer</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <h3 data-es="🔒 Framework IaC Multi-Cloud con Terraform" data-en="🔒 Multi-Cloud Terraform IaC Framework">
+            🔒 Framework IaC Multi-Cloud con Terraform
+          </h3>
+          <p data-es="Framework Terraform modular para AWS, Azure y GCP con esquemas de variables compartidos, estado remoto (S3 + DynamoDB) y aplicación de políticas OPA — simplificando la gobernanza multi-cloud."
+            data-en="Modular Terraform framework supporting AWS, Azure, and GCP with shared variable schemas, remote state (S3 + DynamoDB), and OPA policy enforcement — streamlining multi-cloud governance.">
+            Framework Terraform modular para AWS, Azure y GCP con esquemas de variables compartidos, estado remoto (S3 +
+            DynamoDB) y aplicación de políticas OPA — simplificando la gobernanza multi-cloud.
           </p>
           <div class="tags">
             <span class="tag">Terraform</span>
             <span class="tag">AWS</span>
-          </div>
-        </div>
-
-        <div class="card project-card">
-          <h3>🌿 Green Monitoring Stack</h3>
-          <p>Monitorización enfocada en eficiencia energética que permite reducir el desperdicio de recursos y los
-            costes operativos del Cloud.</p>
-          <div class="tags">
-            <span class="tag">Prometheus</span>
-            <span class="tag">GreenOps</span>
-          </div>
-        </div>
-
-        <div class="card project-card">
-          <h3>⚓ Helm + Kubernetes</h3>
-          <p>Colección de Charts de Helm optimizados y plantillas para facilitar el onboarding de microservicios
-            complejos.</p>
-          <div class="tags">
-            <span class="tag">K8s</span>
-            <span class="tag">Helm</span>
+            <span class="tag">Azure</span>
+            <span class="tag">GCP</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Other Sections -->
-    <section id="education">
-      <h2>🎓 Formación y CAP</h2>
-      <p>Finalizado Máster CAP con vocación docente en tecnología. Aplico metodologías activas para formar
-        a futuros profesionales en tecnología, integrando valores de sostenibilidad y ética profesional. No solo genero
-        la infraestructura,
-        formo a tu equipo para que conozca cómo se ha generado y sea capaz de mantenerla.
-      </p>
+    <!-- ══════════════════════════════════════════
+         TECH STACK
+    ══════════════════════════════════════════ -->
+    <section id="techstack">
+      <h2 data-es="🛠️ Stack Tecnológico" data-en="🛠️ Tech Stack">🛠️ Stack Tecnológico</h2>
+      <div class="tech-grid">
+
+        <div class="tech-category">
+          <h3 data-es="☁️ Plataformas Cloud" data-en="☁️ Cloud Platforms">☁️ Plataformas Cloud</h3>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Azure</span>
+            <span class="tag">GCP</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="📦 Contenedores y Orquestación" data-en="📦 Containers &amp; Orchestration">
+            📦 Contenedores y Orquestación
+          </h3>
+          <div class="tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Helm</span>
+            <span class="tag">ArgoCD</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="🏗️ Infraestructura como Código" data-en="🏗️ Infrastructure as Code">
+            🏗️ Infraestructura como Código
+          </h3>
+          <div class="tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Pulumi</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="⚙️ CI/CD y Automatización" data-en="⚙️ CI/CD &amp; Automation">
+            ⚙️ CI/CD y Automatización
+          </h3>
+          <div class="tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">GitLab CI</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="📊 Observabilidad" data-en="📊 Observability">📊 Observabilidad</h3>
+          <div class="tags">
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Logstash</span>
+            <span class="tag">Kibana</span>
+            <span class="tag">Loki</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="🔐 Seguridad y Redes" data-en="🔐 Security &amp; Networking">🔐 Seguridad y Redes</h3>
+          <div class="tags">
+            <span class="tag">OPA / Gatekeeper</span>
+            <span class="tag">Vault</span>
+            <span class="tag">Istio</span>
+            <span class="tag">RBAC</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="🗄️ Bases de Datos y Mensajería" data-en="🗄️ Databases &amp; Messaging">
+            🗄️ Bases de Datos y Mensajería
+          </h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Kafka</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 data-es="🐚 Scripting y Lenguajes" data-en="🐚 Scripting &amp; Languages">🐚 Scripting y Lenguajes</h3>
+          <div class="tags">
+            <span class="tag">Bash</span>
+            <span class="tag">Python</span>
+            <span class="tag">Go (básico / basics)</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="sustainability">
-      <h2>🌱 Sostenibilidad</h2>
-      <p>Soy una apasionada de la naturaleza. Creo en la preservación de lo esencial, ya sea optimizando el consumo de
-        un clúster de Kubernetes o preservando el folclore de nuestros pueblos
-        como presidenta de una asociación de jotas. </p>
-      <p>La eficiencia y la tradición comparten un objetivo: que lo valioso perdure en el tiempo.</p>
+    <!-- ══════════════════════════════════════════
+         FORMACIÓN / EDUCATION
+    ══════════════════════════════════════════ -->
+    <section id="education">
+      <h2 data-es="🎓 Formación" data-en="🎓 Education">🎓 Formación</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="timeline-date">2023 – 2024</span>
+          <div class="timeline-content">
+            <h3 data-es="Máster en Formación del Profesorado (CAP)"
+              data-en="Master's in Secondary Education Teaching (CAP)">
+              Máster en Formación del Profesorado (CAP)
+            </h3>
+            <p class="timeline-company">España / Spain</p>
+            <p data-es="Habilitación pedagógica para la docencia profesional. Aplicación de metodologías activas en materias tecnológicas."
+              data-en="Pedagogical qualification enabling professional teaching. Applied active learning methodologies in technology subjects, with emphasis on ethics.">
+              Habilitación pedagógica para la docencia profesional. Aplicación de metodologías activas en materias
+              tecnológicas, con énfasis en ética.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2015 – 2019</span>
+          <div class="timeline-content">
+            <h3 data-es="Grado en Ingeniería Informática" data-en="Computer Science Engineering">
+              Grado en Ingeniería Informática
+            </h3>
+            <p class="timeline-company">Universidad · España / Spain</p>
+            <p data-es="Estudios en arquitectura de sistemas, redes, ingeniería del software y sistemas operativos. Base para la especialización en cloud e infraestructura."
+              data-en="Core studies in systems architecture, networks, software engineering, and operating systems. Foundation for specialisation in cloud and infrastructure engineering.">
+              Estudios en arquitectura de sistemas, redes, ingeniería del software y sistemas operativos. Base para la
+              especialización en cloud e infraestructura.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CERTIFICACIONES / CERTIFICATIONS
+    ══════════════════════════════════════════ -->
+    <section id="certifications">
+      <h2 data-es="📜 Certificaciones" data-en="📜 Certifications">📜 Certificaciones</h2>
+      <div class="grid">
+
+        <div class="card cert-card">
+          <h3>☁️ AWS Certified Solutions Architect</h3>
+          <p data-es="Nivel Associate. Diseño de arquitecturas cloud, seguridad y optimización de costes en AWS."
+            data-en="Associate level. Cloud architecture design, security, and cost optimisation on AWS.">
+            Nivel Associate. Diseño de arquitecturas cloud, seguridad y optimización de costes en AWS.
+          </p>
+          <div class="tags"><span class="tag">AWS</span><span class="tag">Cloud</span></div>
+        </div>
+
+        <div class="card cert-card">
+          <h3>⚓ Certified Kubernetes Administrator (CKA)</h3>
+          <p data-es="Operación de clústeres, redes, almacenamiento, planificación de cargas de trabajo y resolución de problemas."
+            data-en="Cluster operation, networking, storage, workload scheduling, and troubleshooting.">
+            Operación de clústeres, redes, almacenamiento, planificación de cargas de trabajo y resolución de problemas.
+          </p>
+          <div class="tags"><span class="tag">Kubernetes</span><span class="tag">CNCF</span></div>
+        </div>
+
+        <div class="card cert-card">
+          <h3>🏗️ HashiCorp Terraform Associate</h3>
+          <p data-es="Fundamentos de Infrastructure as Code, gestión de estado, módulos y gobernanza de workspaces."
+            data-en="Infrastructure as Code fundamentals, state management, modules, and workspace governance.">
+            Fundamentos de Infrastructure as Code, gestión de estado, módulos y gobernanza de workspaces.
+          </p>
+          <div class="tags"><span class="tag">Terraform</span><span class="tag">IaC</span></div>
+        </div>
+
+        <div class="card cert-card">
+          <h3>🔵 Microsoft Azure Fundamentals (AZ-900)</h3>
+          <p data-es="Servicios core de Azure, conceptos cloud, modelos de precios y acuerdos de nivel de servicio."
+            data-en="Azure core services, cloud concepts, pricing models, and service-level agreements.">
+            Servicios core de Azure, conceptos cloud, modelos de precios y acuerdos de nivel de servicio.
+          </p>
+          <div class="tags"><span class="tag">Azure</span><span class="tag">Microsoft</span></div>
+        </div>
+
+      </div>
     </section>
 
   </div> <!-- End Container -->
 
-  <!-- Footer -->
-  <footer>
+  <!-- ══════════════════════════════════════════
+       FOOTER / CONTACTO
+  ══════════════════════════════════════════ -->
+  <footer id="contact">
     <div class="container">
-      <h2>📧 Contacto</h2>
-      <p>¿Hablamos de tu próximo proyecto?</p>
+      <h2 data-es="📧 Contacto" data-en="📧 Contact">📧 Contacto</h2>
+      <p data-es="¿Hablamos de tu próximo proyecto, consultoría o formación?"
+        data-en="Open to new projects, consulting, and speaking opportunities.">
+        ¿Hablamos de tu próximo proyecto, consultoría o formación?
+      </p>
       <p>
         <a href="mailto:julia15lopezs@gmail.com">julia15lopezs@gmail.com</a>
       </p>
 
       <div style="margin-top: 2rem;">
         <a href="https://github.com/Julia15Lop" target="_blank">GitHub</a>
-        <a href="https:linkedin.com/in/julia-lópez-sánchez-25032b138" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/julia-lópez-sánchez-25032b138" target="_blank">LinkedIn</a>
         <a href="https://medium.com/@julia15lopezs" target="_blank">Medium</a>
       </div>
 
       <p style="margin-top: 3rem; font-size: 0.8rem; opacity: 0.6;">
-        © 2026 Julia López Sánchez. Built with ❤️ & Code.
+        © 2026 Julia López Sánchez. Built with ❤️ &amp; Code.
       </p>
     </div>
   </footer>
+
+  <!-- ══════════════════════════════════════════
+       LANGUAGE TOGGLE SCRIPT
+  ══════════════════════════════════════════ -->
+  <script>
+    // Initialise from localStorage (default: 'es')
+    let currentLang = localStorage.getItem('lang') || 'es';
+
+    function applyLang(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('langLabel').textContent = lang === 'es' ? 'EN' : 'ES';
+
+      // Swap all elements that carry data-es / data-en attributes
+      document.querySelectorAll('[data-es][data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+
+      // Also swap the toggle button's title
+      const btn = document.getElementById('langToggle');
+      btn.title = lang === 'es'
+        ? 'Switch to English'
+        : 'Cambiar a Español';
+
+      localStorage.setItem('lang', lang);
+      currentLang = lang;
+    }
+
+    function toggleLang() {
+      applyLang(currentLang === 'es' ? 'en' : 'es');
+    }
+
+    // Apply saved preference on load
+    if (currentLang !== 'es') applyLang(currentLang);
+  </script>
 
 </body>
 
