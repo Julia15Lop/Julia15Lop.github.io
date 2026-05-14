@@ -123,6 +123,40 @@ section {
   box-shadow: var(--shadow-sm);
 }
 
+/* Experience */
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  text-align: justify;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px;
+  /* Suficiente para el texto */
+  padding-top: 1rem;
+}
+
+.icon-plus {
+  transition: transform 0.3s ease;
+  color: #800020;
+  font-weight: bold;
+}
+
+.accordion-item.active .icon-plus {
+  transform: rotate(45deg);
+  /* Se convierte en una X */
+}
+
 /* Cards Grid */
 .grid {
   display: grid;
