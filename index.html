@@ -236,25 +236,32 @@
       <div class="grid">
 
         <!-- PROYECTO 1: CI/CD Jenkins - AWX -->
-        <div class="card project-card">
-          <h3 data-es="Laboratorio de CI/CD & Automatización Enterprise" data-en="Enterprise CI/CD & Automation Lab">
-            Laboratorio de CI/CD & Automatización Enterprise
-          </h3>
-          
-          <p style="text-align: justify; font-size: 0.95rem; color: var(--color-text-muted);" 
-            data-es="Diseño y despliegue de un entorno de simulación local para flujos de CI/CD avanzados. El laboratorio integra Jenkins en Docker para la orquestación del pipeline, el cual dispara playbooks de Ansible gestionados desde una instancia de AWX Tower corriendo sobre Minikube (Kubernetes), automatizando el despliegue final de una aplicación Nginx."
-            data-en="Design and deployment of a local simulation environment for advanced CI/CD workflows. The lab integrates Jenkins via Docker for pipeline orchestration, triggering Ansible playbooks managed by an AWX Tower instance running on Minikube (Kubernetes), automating the final deployment of an Nginx application.">
-            Diseño y despliegue de un entorno de simulación local para flujos de CI/CD avanzados...
-          </p>
-          
-          <div class="tags">
+      <div class="card project-card">
+        <h3 data-es="Laboratorio de CI/CD & Automatización Enterprise" data-en="Enterprise CI/CD & Automation Lab">
+          Laboratorio de CI/CD & Automatización Enterprise
+        </h3>
+        
+        <p style="text-align: justify; font-size: 0.95rem; color: var(--color-text-muted);" 
+          data-es="Diseño y despliegue de un entorno de simulación local para flujos de CI/CD avanzados. El laboratorio integra Jenkins en Docker para la orquestación del pipeline, el cual dispara playbooks de Ansible gestionados desde una instancia de AWX Tower corriendo sobre Minikube (Kubernetes), automatizando el despliegue final de una aplicación Nginx."
+          data-en="Design and deployment of a local simulation environment for advanced CI/CD workflows. The lab integrates Jenkins via Docker for pipeline orchestration, triggering Ansible playbooks managed by an AWX Tower instance running on Minikube (Kubernetes), automating the final deployment of an Nginx application.">
+          Diseño y despliegue de un entorno de simulación local para flujos de CI/CD avanzados...
+        </p>
+        
+        <!-- Contenedor flex para alinear los tags a la izquierda y el link a la derecha -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: auto; padding-top: var(--spacing-md);">
+          <div class="tags" style="margin-top: 0; padding-top: 0;">
             <span class="tag">Jenkins</span>
             <span class="tag">AWX / Ansible</span>
-            <span class="tag">Minikube (K8s)</span>
+            <span class="tag">Minikube</span>
             <span class="tag">Docker</span>
-            <span class="tag">Nginx</span>
           </div>
+          
+          <!-- Enlace al repositorio (Cambia el '#' por la URL real de tu repo) -->
+          <a href="#" target="_blank" style="font-family: 'Fira Code', monospace; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 5px;">
+            <span data-es="[ Ver Código ]" data-en="[ View Code ]">[ Ver Código ]</span>
+          </a>
         </div>
+      </div>
 
         <!-- PROYECTO 2: OBSERVABILIDAD -->
         <div class="card project-card">
